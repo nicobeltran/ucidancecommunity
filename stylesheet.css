@@ -56,11 +56,14 @@ footer {
   /*Text Styles*/
   text-align: center;
   /*Background image*/
-  background-image: url("https://c1.staticflickr.com/5/4174/34329922951_557d07c404_o.jpg");
+  background-image: url("https://c1.staticflickr.com/5/4174/34329922951_e2c060be42_b.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+  @media all and (device-width: 375px) and (device-height: 875px) and (orientation: portrait) {
+    .hero-image {
+      height: 812px; } }
 
 .banner-credit {
   position: absolute;

@@ -3,15 +3,13 @@ let slideIndex = 1;
 
 function init() {
 	var galleries = document.querySelectorAll('.slideshow-container');
-	console.log(galleries.length);
 	for (let i = 0 ;i < galleries.length; i++) {
 	    displaySlides(slideIndex, galleries[i].id);
 	}
-	console.log("init");
+
 }
 
 function nextSlide(n, slideshow) {
-	// console.log("next");
 	displaySlides(slideIndex += n, slideshow);
 }
 
@@ -40,6 +38,7 @@ function displaySlides(n, slideshow) {
 
 	// for slide that needs to be shown, set display = block
 	slides[slideIndex-1].style.display = "block";
-	console.log("done");
 }
+
+
 

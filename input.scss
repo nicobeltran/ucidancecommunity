@@ -22,11 +22,17 @@ $mq-pc: 1024px;
 	}
 }
 
+@mixin iphonex {
+	@media all and (device-width: 375px) and (device-height: 875px) and (orientation: portrait) {
+		@content;
+	}
+}
+
 // Elements css
 html, body {
  margin: 0;
  width: 100%;
- // height: 100%;
+//  height: 100%;
  padding: 0;
  overflow-x: hidden;
  font-family: sans-serif;
@@ -92,6 +98,10 @@ footer {
 	height: 100vh;
 	position: relative;
 
+	@include iphonex {
+		height: 812px;
+	}
+
 	/* Flexbox */
 	display: flex;
 	justify-content: center;
@@ -101,8 +111,12 @@ footer {
 	text-align: center;
 
 	/*Background image*/
-	background-image: url('https://c1.staticflickr.com/5/4174/34329922951_557d07c404_o.jpg');
+	background-image: url('https://c1.staticflickr.com/5/4174/34329922951_e2c060be42_b.jpg');
 	background-size: cover;
+	// @include retina {
+	// 	background-image: url('https://c1.staticflickr.com/5/4174/34329922951_580b652203_k.jpg');
+	// 	background-size: 
+	// }
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
