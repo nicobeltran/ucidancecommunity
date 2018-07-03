@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+}
+
+img {
+    width: 100vw;
+	height: 100vh;
+	position: relative;
+
+	/* Flexbox */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*Text Styles*/
+	text-align: center;
+
+	/*Background image*/
+	background-image: url('https://c1.staticflickr.com/5/4174/34329922951_e2c060be42_b.jpg');
+	background-size: cover;
+	
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

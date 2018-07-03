@@ -60,10 +60,10 @@ footer {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
-  @media all and (device-width: 375px) and (device-height: 875px) and (orientation: portrait) {
+  background-attachment: scroll; }
+  @media screen and (min-width: 1024px) {
     .hero-image {
-      height: 812px; } }
+      background-attachment: fixed; } }
 
 .banner-credit {
   position: absolute;

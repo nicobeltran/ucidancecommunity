@@ -98,10 +98,6 @@ footer {
 	height: 100vh;
 	position: relative;
 
-	@include iphonex {
-		height: 812px;
-	}
-
 	/* Flexbox */
 	display: flex;
 	justify-content: center;
@@ -119,7 +115,10 @@ footer {
 	// }
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: scroll;
+	@include pc {
+		background-attachment: fixed;
+	}
 }
 
 .banner-credit {
